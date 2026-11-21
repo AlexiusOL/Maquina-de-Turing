@@ -37,7 +37,7 @@
             tablaDeTransicionesCifrado.put("q1_", new Transicion("qf", '_', ' '));
             tablaDeTransicionesCifrado.put("q2_", new Transicion("qf", '_', ' '));
             
-            tablaDeTransicionesCifrado.put("q0", new Transicion("qf", '_', ' '));
+            tablaDeTransicionesCifrado.put("q0_", new Transicion("qf", '_', ' '));
 
             //tabla de descifrado, hace lo mismo pero al reves
             // Desde q0
@@ -65,7 +65,7 @@
             tablaDeTransicionesDescifrado.put("q2F", new Transicion("q0", 'C', 'R'));
 
             //cuando lee un blanco de cualquier estado se va a qf
-            tablaDeTransicionesDescifrado.put("q0", new Transicion("qf", '_', ' '));
+            tablaDeTransicionesDescifrado.put("q0_", new Transicion("qf", '_', ' '));
             tablaDeTransicionesDescifrado.put("q1_", new Transicion("qf", '_', ' '));
             tablaDeTransicionesDescifrado.put("q2_", new Transicion("qf", '_', ' '));
             

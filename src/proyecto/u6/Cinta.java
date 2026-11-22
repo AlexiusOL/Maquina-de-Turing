@@ -9,7 +9,7 @@ public class Cinta {
     // La posicion o el indice de donde vamos en la Cinta
     private int idx;
     
-    // Constructor para crear la Cinta a raiz de la cadena que resivimos
+    // Constructor para crear la Cinta a raiz de la cadena que recibimos
     public Cinta (String cadena) {
         // Lo inicializamos en 1 porque en 0 estara un '_' (Espacio en blanco)
         this.idx = 1;
@@ -23,25 +23,25 @@ public class Cinta {
         }
     }
     
-    // Regresamos el carcater en la posicion idx
+    // Regresamos el caracter en la posicion idx
     public char leer () {
         return celdas.get(idx);
     }
     
-    // cambimos de caracter en la cinta
-    public void escibir (char newSimbolo) {
+    // cambiamos de caracter en la cinta
+    public void escribir (char newSimbolo) {
         celdas.set(idx, newSimbolo);
     }
     
     //Dependiendo de la direccion nos movemos a un lado u a otro lado
     public void mover (char direccion) {
-        if (direccion == 'I') {
+        if (direccion == 'L') {
             if (idx <= 0) {
                 celdas.add(0,'_');
             } else {
                 idx--;
             }
-        } else if (direccion == 'D') {
+        } else if (direccion == 'R') {
             idx++;
             if (idx >= celdas.size()) {
                 celdas.add('_');

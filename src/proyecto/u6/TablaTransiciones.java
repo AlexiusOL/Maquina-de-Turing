@@ -2,7 +2,7 @@
     import java.util.*;
 
     public class TablaTransiciones {
-        
+        // Crea ambas tablas como hashmap, con un string como clave y una transicion como valor
         private HashMap<String, Transicion> tablaDeTransicionesCifrado = new HashMap<>();
         private HashMap<String, Transicion> tablaDeTransicionesDescifrado = new HashMap<>();
 
